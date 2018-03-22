@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray_line"
+    android:orientation="horizontal"
+    android:rowCount="6"
+    android:columnCount="4">
+    <FrameLayout
+
+        android:layout_columnSpan="4"
+        android:background="@color/white_btn"
+        android:layout_gravity="fill"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/regular_second_distance"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:clickable="false"
+            android:focusable="false"
+
+            android:focusableInTouchMode="false"
+            android:textColor="@color/font_color"
+            tools:text="@string/client_address" />
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close_dialog"
+            android:clickable="true"
+            android:paddingRight="@dimen/regular_second_distance"
+            android:layout_gravity="right|center_vertical"
+            />
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_columnSpan="4"
+        android:background="@color/white_btn"
+        android:layout_gravity="fill"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/regular_second_distance"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:textColor="@color/font_color"
+            android:text="@string/amount" />
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/regular_second_distance"
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/font_color_second"
+            tools:text="12.5" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_1"
+
+        android:layout_columnWeight="1"
+
+        style="@style/amount_keyboard"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="2" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="3" />
+
+    <ImageView
+        android:id="@+id/tv_goback"
+        android:layout_marginLeft="@dimen/area_margin_top1"
+
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        android:padding="32dp"
+
+        android:src="@mipmap/editor_deletekey"
+        android:background="@drawable/item_app_bg_selector"
+        android:text="3" />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="4" />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        android:layout_columnWeight="1"
+        style="@style/amount_keyboard"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/tv_6"
+        android:layout_marginTop="@dimen/area_margin_top1"
+
+        android:layout_columnWeight="1"
+        style="@style/amount_keyboard"
+        android:text="6" />
+
+    <TextView
+        android:id="@+id/tv_7"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="7" />
+
+    <TextView
+        android:id="@+id/tv_8"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="8" />
+
+    <TextView
+        android:id="@+id/tv_9"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+
+        style="@style/amount_keyboard"
+        android:text="9" />
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="@dimen/area_margin_top1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="2"
+        style="@style/amount_keyboard"
+        android:textColor="@color/red_light"
+        android:text="OK" />
+    <TextView
+        android:id="@+id/tv_"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="." />
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        android:layout_marginRight="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="0" />
+    <TextView
+        android:id="@+id/tv_c"
+        android:layout_columnWeight="1"
+        android:layout_marginTop="@dimen/area_margin_top1"
+        style="@style/amount_keyboard"
+        android:text="C" />
+</GridLayout>
