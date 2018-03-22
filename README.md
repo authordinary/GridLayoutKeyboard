@@ -1,5 +1,8 @@
 # GridLayoutKeyboard
 用gridLayout布局的一个简单的更改数量的键盘
+
+![Image text](https://raw.githubusercontent.com/authordinary/GridLayoutKeyboard/master/image/QQ%E5%9B%BE%E7%89%8720180322110050.png)
+
 第一步:  直接导入布局文件view_amount_editor
 第二步： 在activity中或者fragment中填充进来，我这里是在activity中
         
